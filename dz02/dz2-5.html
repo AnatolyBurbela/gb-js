@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict';
+        
+        function addNum(x, y) {
+            return(x + y);
+        }
+        function subNum(x, y) {
+            return(x - y);
+        }
+        function multNum (x, y) {
+            return(x * y);
+        }
+        function divNum (x, y) {
+            return(x / y);
+        }
+        function mathOperation (arg1, arg2, operation) {
+            switch(operation) {
+                case 'сложить':
+                    return addNum(arg1, arg2);
+                case 'вычесть':
+                    return subNum(arg1, arg2);
+                case 'умножить':
+                    return multNum(arg1, arg2);
+                case 'разделить': 
+                    return divNum(arg1, arg2);
+            }
+        }
+
+        console.log(mathOperation(2, 7, 'сложить'));
+        console.log(mathOperation(2, 7, 'вычесть'));
+        console.log(mathOperation(2, 7, 'умножить'));
+        console.log(mathOperation(2, 7, 'разделить'));
+        
+    </script>
+</body>
+</html>
