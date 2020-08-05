@@ -18,25 +18,27 @@
             return lastChar;
         };
 
-        switch (sumLastChar(sum)) {
-            case '0':
-            case '5':
-            case '6':
-            case '7':
-            case '8':
-            case '9':
-                alert(`Ваша сумма ${sum} рублей успешно внесена в банк!`);
-                break;
-            case '1':
-                alert(`Ваша сумма ${sum} рубль успешно внесена в банк!`);
-                break;
-            case '2':
-            case '3':
-            case '4':
-                alert(`Ваша сумма ${sum} рубля успешно внесена в банк!`);
-                break;
-            default:
-                alert('Неверная сумма!');
+        if (sum >= 0 && sum != null && sum != undefined) {
+            switch (sumLastChar(sum)) {
+                case '0':
+                case '5':
+                case '6':
+                case '7':
+                case '8':
+                case '9':
+                    alert(`Ваша сумма ${sum} рублей успешно внесена в банк!`);
+                    break;
+                case '1':
+                    alert(`Ваша сумма ${sum} рубль успешно внесена в банк!`);
+                    break;
+                case '2':
+                case '3':
+                case '4':
+                    alert(`Ваша сумма ${sum} рубля успешно внесена в банк!`);
+                    break;
+            };
+        } else {
+            alert('Неверная сумма!');
         };
     </script>
 </body>
